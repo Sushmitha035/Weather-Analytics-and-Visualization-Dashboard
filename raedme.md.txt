@@ -1,0 +1,30 @@
+# Makefile for Weather Analytics Dashboard
+
+# Variables
+WORKBOOK=weather_dashboard.twbx
+FOLDER=weather_dashboard
+ZIPFILE=weather_dashboard.zip
+
+# Default target
+all: help
+
+# Open Tableau workbook
+open:
+	start "" "$(WORKBOOK)"
+
+# Export folder as zip
+zip:
+	powershell Compress-Archive -Path "$(FOLDER)\*" -DestinationPath "$(ZIPFILE)"
+
+# Push to GitHub
+push:
+	git add .
+	git commit -m "Update Weather Analytics Dashboard"
+	git push origin main
+
+# Help message
+help:
+	@echo "Available commands:"
+	@echo "  make open   - Open the Tableau workbook"
+	@echo "  make zip    - Zip the project folder"
+	@echo "  make push   - Commit and push changes to GitHub"
