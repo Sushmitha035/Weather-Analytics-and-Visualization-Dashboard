@@ -1,5 +1,3 @@
-<img width="1339" height="703" alt="windspeed" src="https://github.com/user-attachments/assets/688378f3-f64c-4a96-9943-d3dd1ddbae9d" />
 
-
-
+<img width="1586" height="800" alt="Weather Dashboard images" src="https://github.com/user-attachments/assets/68c7cafe-1766-4af8-8d35-fd5c75c7e2df" />
 
